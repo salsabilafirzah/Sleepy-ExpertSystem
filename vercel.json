@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "sleepy.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "sleepy.py"
+    }
+  ]
+}
